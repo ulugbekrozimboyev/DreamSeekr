@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCFDC85E1DEEE47000F7547C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDC85D1DEEE47000F7547C /* AppDelegate.swift */; };
+		BCFDC8601DEEE47000F7547C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDC85F1DEEE47000F7547C /* ViewController.swift */; };
+		BCFDC8631DEEE47000F7547C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFDC8611DEEE47000F7547C /* Main.storyboard */; };
+		BCFDC8651DEEE47000F7547C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFDC8641DEEE47000F7547C /* Assets.xcassets */; };
+		BCFDC8681DEEE47000F7547C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFDC8661DEEE47000F7547C /* LaunchScreen.storyboard */; };
+		BCFDC8701DEEF65A00F7547C /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDC86F1DEEF65A00F7547C /* Dream.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCFDC85A1DEEE47000F7547C /* DreamSeekr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamSeekr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFDC85D1DEEE47000F7547C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCFDC85F1DEEE47000F7547C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFDC8621DEEE47000F7547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCFDC8641DEEE47000F7547C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFDC8671DEEE47000F7547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCFDC8691DEEE47000F7547C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFDC86F1DEEF65A00F7547C /* Dream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCFDC8571DEEE47000F7547C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCFDC8511DEEE47000F7547C = {
+			isa = PBXGroup;
+			children = (
+				BCFDC85C1DEEE47000F7547C /* DreamSeekr */,
+				BCFDC85B1DEEE47000F7547C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCFDC85B1DEEE47000F7547C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDC85A1DEEE47000F7547C /* DreamSeekr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFDC85C1DEEE47000F7547C /* DreamSeekr */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDC85D1DEEE47000F7547C /* AppDelegate.swift */,
+				BCFDC85F1DEEE47000F7547C /* ViewController.swift */,
+				BCFDC8611DEEE47000F7547C /* Main.storyboard */,
+				BCFDC86F1DEEF65A00F7547C /* Dream.swift */,
+				BCFDC8641DEEE47000F7547C /* Assets.xcassets */,
+				BCFDC8661DEEE47000F7547C /* LaunchScreen.storyboard */,
+				BCFDC8691DEEE47000F7547C /* Info.plist */,
+			);
+			path = DreamSeekr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCFDC8591DEEE47000F7547C /* DreamSeekr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFDC86C1DEEE47000F7547C /* Build configuration list for PBXNativeTarget "DreamSeekr" */;
+			buildPhases = (
+				BCFDC8561DEEE47000F7547C /* Sources */,
+				BCFDC8571DEEE47000F7547C /* Frameworks */,
+				BCFDC8581DEEE47000F7547C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamSeekr;
+			productName = DreamSeekr;
+			productReference = BCFDC85A1DEEE47000F7547C /* DreamSeekr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCFDC8521DEEE47000F7547C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Ulugbek;
+				TargetAttributes = {
+					BCFDC8591DEEE47000F7547C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCFDC8551DEEE47000F7547C /* Build configuration list for PBXProject "DreamSeekr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCFDC8511DEEE47000F7547C;
+			productRefGroup = BCFDC85B1DEEE47000F7547C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFDC8591DEEE47000F7547C /* DreamSeekr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCFDC8581DEEE47000F7547C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFDC8681DEEE47000F7547C /* LaunchScreen.storyboard in Resources */,
+				BCFDC8651DEEE47000F7547C /* Assets.xcassets in Resources */,
+				BCFDC8631DEEE47000F7547C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCFDC8561DEEE47000F7547C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFDC8601DEEE47000F7547C /* ViewController.swift in Sources */,
+				BCFDC85E1DEEE47000F7547C /* AppDelegate.swift in Sources */,
+				BCFDC8701DEEF65A00F7547C /* Dream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCFDC8611DEEE47000F7547C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFDC8621DEEE47000F7547C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCFDC8661DEEE47000F7547C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFDC8671DEEE47000F7547C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCFDC86A1DEEE47000F7547C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCFDC86B1DEEE47000F7547C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCFDC86D1DEEE47000F7547C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DreamSeekr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yt.DreamSeekr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCFDC86E1DEEE47000F7547C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DreamSeekr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yt.DreamSeekr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCFDC8551DEEE47000F7547C /* Build configuration list for PBXProject "DreamSeekr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFDC86A1DEEE47000F7547C /* Debug */,
+				BCFDC86B1DEEE47000F7547C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFDC86C1DEEE47000F7547C /* Build configuration list for PBXNativeTarget "DreamSeekr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFDC86D1DEEE47000F7547C /* Debug */,
+				BCFDC86E1DEEE47000F7547C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCFDC8521DEEE47000F7547C /* Project object */;
+}
