@@ -21,6 +21,38 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let array = UserDefaults.standard.object(forKey: "dreams") as? [[String:Any]] {
+            var dreams:[Dream] = []
+            for item in array {
+                let dream = Dream()
+                
+                if let name = item["name"] as? String {
+                    dream.name = name
+                }
+                
+                if let imageUrl = item["imageUrl"] as? String {
+                    dream.imageUrl = imageUrl
+                }
+                
+                if let achived = item["achived"] as? Bool {
+                    dream.achived = achived
+                }
+                
+                if let created = item["created"] as? NSDate {
+                    dream.created = created
+                }
+                dreams.append(dream)
+            }
+            
+            self.dreams = dreams
+            tableView.reloadData()
+            
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -84,12 +116,16 @@ class TableViewController: UITableViewController {
         dream.achived = true
         
         dreams[indexPath.row] = dream
+        
+        UserDefaults.standard.set(dreams, forKey: "dreams")
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let dream = dreams[indexPath.row]
         dream.achived = false
         dreams[indexPath.row] = dream
+        
+        UserDefaults.standard.set(dreams, forKey: "dreams")
     }
 
     /*

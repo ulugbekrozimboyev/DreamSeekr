@@ -15,6 +15,8 @@ class ViewController: UIViewController,UITextFieldDelegate, UIImagePickerControl
 
     @IBOutlet weak var textField: UITextField!
     
+    var dream:Dream = Dream()
+    
     @IBAction func addImage(_ sender: Any) {
         
         let imagePicker = UIImagePickerController()
@@ -28,6 +30,23 @@ class ViewController: UIViewController,UITextFieldDelegate, UIImagePickerControl
     }
     
     @IBAction func saveImage(_ sender: Any) {
+        
+        var dictionary:[String:Any] = [:]
+        dictionary.updateValue(dream.name as AnyObject, forKey: "name")
+        dictionary.updateValue(dream.created, forKey: "created")
+        dictionary.updateValue(dream.achived as AnyObject, forKey: "achived")
+        dictionary.updateValue(dream.imageUrl as AnyObject, forKey: "imageUrl")
+        
+        if var array = UserDefaults.standard.object(forKey: "dreams") as? [Any] {
+            
+            array.append(dictionary)
+            UserDefaults.standard.set(array, forKey: "dreams")
+        } else {
+            let array:[Any] = [dictionary]
+            UserDefaults.standard.set(array, forKey: "dreams")
+        }
+        
+        
     }
     
     override func loadView() {
@@ -46,6 +65,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UIImagePickerControl
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        dream.name = textField.text!
         return true
     }
     
@@ -89,6 +109,7 @@ class ViewController: UIViewController,UITextFieldDelegate, UIImagePickerControl
                 let filePath = documentPath.appending("/" + fileName)
                 do {
                     try pngData?.write(to: URL(fileURLWithPath: filePath), options: .atomic)
+                    self.dream.imageUrl = fileName
                 } catch {
                     print(error)
                 }
