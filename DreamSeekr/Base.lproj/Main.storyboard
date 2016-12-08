@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LhX-96-x27">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Qb3-DJ-rMq">
+            <objects>
+                <tableViewController id="LhX-96-x27" customClass="TableViewController" customModule="DreamSeekr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q41-gZ-Wc1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="7bO-Wl-PP1" customClass="TableViewCell" customModule="DreamSeekr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7bO-Wl-PP1" id="2Q1-Cn-uaF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-Ai-bPi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu1-OS-VWe">
+                                            <rect key="frame" x="167" y="11" width="42" height="21"/>
+                                            <color key="backgroundColor" red="0.12323915155440412" green="0.12323915155440412" blue="0.12323915155440412" alpha="0.74559859154929575" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fu1-OS-VWe" firstAttribute="centerX" secondItem="2Q1-Cn-uaF" secondAttribute="centerX" id="Fg0-bB-Gwt"/>
+                                        <constraint firstItem="hEo-Ai-bPi" firstAttribute="top" secondItem="2Q1-Cn-uaF" secondAttribute="top" id="Xfj-ZN-kK0"/>
+                                        <constraint firstItem="fu1-OS-VWe" firstAttribute="centerY" secondItem="2Q1-Cn-uaF" secondAttribute="centerY" id="e7Z-93-ZLx"/>
+                                        <constraint firstAttribute="bottom" secondItem="hEo-Ai-bPi" secondAttribute="bottom" id="pYp-dO-5Zd"/>
+                                        <constraint firstAttribute="trailing" secondItem="hEo-Ai-bPi" secondAttribute="trailing" id="phH-kE-arx"/>
+                                        <constraint firstItem="hEo-Ai-bPi" firstAttribute="leading" secondItem="2Q1-Cn-uaF" secondAttribute="leading" id="zO6-y3-fzp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dreamImageView" destination="hEo-Ai-bPi" id="SS7-ys-9Od"/>
+                                    <outlet property="dreamLabel" destination="fu1-OS-VWe" id="fpm-yz-ayv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LhX-96-x27" id="ccz-sy-5ae"/>
+                            <outlet property="delegate" destination="LhX-96-x27" id="mbb-2z-pNJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LD4-wK-OCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="-765"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
